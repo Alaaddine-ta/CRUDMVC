@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using CRUDMVC.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace CRUDMVC.Services
 {
@@ -8,5 +9,6 @@ namespace CRUDMVC.Services
         {
             
         }
+        public DbSet<Product> Products { get; set; }
     }
 }
